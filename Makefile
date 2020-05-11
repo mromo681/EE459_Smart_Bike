@@ -74,7 +74,7 @@ $(BIN)/%.o: $(TESTS)/%.c
 .c.s:
 	$(COMPILE) -S $< -o $@
 
-flash:	all
+flash:
 	$(AVRDUDE) -U flash:w:main.hex:i
 
 fuse:
