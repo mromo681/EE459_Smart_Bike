@@ -1,6 +1,6 @@
 # Smart Bike Accessary
 ## An embedded system created for EE 459 - Embedded Systems Design Laboratory.
-
+### Created by: Martin Romo, Cameron Donovan, & Qingyuan Li
 The smart bike accessory is a multifunctional bike attachment designed to promote better health and safety for the rider. It has the ability to warn riders if there is a vehicle dangerously approaching from behind and can automatically toggle the bike light based on ambient light levels. It also provides the rider with important ride information such as the current time, location, speed, altitude, direction, and time travelled.
 
 Report: [Insert Link Here]
