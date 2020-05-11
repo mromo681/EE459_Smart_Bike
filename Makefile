@@ -31,7 +31,7 @@ AVRDUDE = avrdude $(PROGRAMMER) -p $(DEVICE)
 COMPILE = avr-gcc -g -Wall -Os -DF_CPU=$(CLOCK) -mmcu=$(DEVICE) -I$(LIB) -I$(SRC)
 
 # symbolic targets:
-all: main.hex
+all: $(BIN) main.hex
 .PHONY: all clean flash
 
 smart_bike: all
@@ -49,6 +49,9 @@ $(BIN)/lcd_test.o: $(TESTS)/lcd_test.c $(LIB)/lcd.h
 $(BIN)/lcd.o: $(SRC)/lcd.c $(LIB)/lcd.h
 $(BIN)/gps.o: $(SRC)/gps.c $(LIB)/gps.h
 $(BIN)/adc.o: $(SRC)/adc.c $(LIB)/adc.h
+
+$(BIN):
+	mkdir $@
 
 $(BIN)/%.o: $(SRC)/%.c
 	$(COMPILE) -c $< -o $@
