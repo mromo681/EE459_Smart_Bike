@@ -35,6 +35,8 @@ all: $(BIN) main.hex
 .PHONY: all clean flash
 
 smart_bike: all
+gps_functionality_check: $(TESTS)/gps_functionality_check.c
+	gcc -o gps_func_check $(TESTS)/gps_functionality_check.c
 gps_update_test: OBJECTS = $(BIN)/gps_update_test.o $(BIN)/gps.o $(BIN)/lcd.o
 gps_update_test: $(BIN)/gps_update_test.o all
 gps_read_test: OBJECTS = $(BIN)/gps_read_test.o $(BIN)/gps.o $(BIN)/lcd.o
