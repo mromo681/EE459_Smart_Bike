@@ -3,7 +3,7 @@
 ### Created by: Martin Romo, Cameron Donovan, & Qingyuan Li
 The smart bike accessory is a multifunctional bike attachment designed to promote better health and safety for the rider. It has the ability to warn riders if there is a vehicle dangerously approaching from behind and can automatically toggle the bike light based on ambient light levels. It also provides the rider with important ride information such as the current time, location, speed, altitude, direction, and time travelled.
 
-Report: [Insert Link Here]
+Report: [Team_15_Report.pdf](Team_15_Report.pdf)
 
 The above report describes what modules were used and how to wire everything together.
 
