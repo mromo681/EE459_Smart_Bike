@@ -88,7 +88,7 @@ load: all
 	bootloadHID main.hex
 
 clean:
-	rm -f main.hex main.elf $(wildcard $(BIN)/*)
+	rm -f main.hex main.elf $(wildcard *.exe) $(wildcard $(BIN)/*)
 
 # file targets:
 main.elf: .FORCE
